@@ -16,27 +16,91 @@ body {
     min-height: 100vh; /* Full viewport height */
 }
 
-.channels-container {
+.container {
     width: 100%;
-    max-width: 800px; /* Maximum width for the container */
-    padding: 20px;
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center container */
 }
 
-.header {
+/* Header Section */
+header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between logo and title */
-    margin-bottom: 20px; /* Space below header */
+    justify-content: space-between; /* Space between logo and navigation */
+    background-color: #1b263b; /* Header background */
+    padding: 15px 20px; /* Padding for header */
 }
 
-.logo {
+.logo img {
     width: 120px; /* Logo width */
 }
 
-h1 {
+.menu {
+    display: flex; /* Flexbox for menu items */
+    align-items: center; /* Center align items vertically */
+}
+
+.menu ul {
+    list-style: none; /* Remove list style */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between menu items */
+}
+
+.menu a {
+    color: #e0e1dd; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Bold font weight */
+}
+
+.search-container {
+    display: flex; /* Flexbox for search bar */
+    align-items: center; /* Center align items vertically */
+}
+
+.search-input {
+    padding: 5px; /* Padding for input */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for input */
+}
+
+.search-button {
+    padding: 5px 10px; /* Padding for button */
+    background-color: #415a77; /* Button background */
+    color: #e0e1dd; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Profile Section */
+.profile {
+    display: flex; /* Flexbox for profile section */
+    align-items: center; /* Center align items vertically */
+    gap: 10px; /* Space between profile elements */
+}
+
+.profile-pic {
+    width: 40px; /* Profile picture width */
+    height: 40px; /* Profile picture height */
+    border-radius: 50%; /* Circular profile picture */
+}
+
+.logout-button {
+    color: #e0e1dd; /* Logout button color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Channels Section */
+.channels-container {
+    width: 100%;
+    padding: 20px; /* Padding for channels container */
+}
+
+h2 {
     font-size: 28px; /* Header font size */
     color: #1b263b; /* Header color */
     font-weight: 600; /* Bold font weight */
+    margin-bottom: 20px; /* Space below header */
 }
 
 .channels-list {
@@ -70,6 +134,15 @@ h1 {
 .channel-info p {
     font-size: 14px; /* Subtext font size */
     color: #778da9; /* Subtext color */
+}
+
+/* Footer Section */
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    padding: 10px; /* Padding for footer */
+    background-color: #1b263b; /* Footer background color */
+    color: #e0e1dd; /* Footer text color */
+    text-align: center; /* Center align text */
 }
 
 /* Responsive Styles */
