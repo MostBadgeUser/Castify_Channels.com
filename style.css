@@ -1,0 +1,86 @@
+/* General Reset */
+body, h1, p, div, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e0e1dd; /* Light background color */
+    color: #1b263b; /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.channels-container {
+    width: 100%;
+    max-width: 800px; /* Maximum width for the container */
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and title */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.logo {
+    width: 120px; /* Logo width */
+}
+
+h1 {
+    font-size: 28px; /* Header font size */
+    color: #1b263b; /* Header color */
+    font-weight: 600; /* Bold font weight */
+}
+
+.channels-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow channels to wrap */
+    gap: 20px; /* Space between channels */
+}
+
+.channel-item {
+    background-color: #1b263b; /* Channel item background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside the channel item */
+    text-align: center; /* Center align text */
+    width: calc(33.33% - 20px); /* 3 items per row with gap */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.channel-icon {
+    width: 80px; /* Icon width */
+    height: 80px; /* Icon height */
+    border-radius: 50%; /* Circular icons */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+.channel-info h2 {
+    font-size: 20px; /* Channel name font size */
+    color: #e0e1dd; /* Channel name color */
+    font-weight: 600; /* Bold font weight */
+}
+
+.channel-info p {
+    font-size: 14px; /* Subtext font size */
+    color: #778da9; /* Subtext color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .channel-item {
+        width: calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .channel-item {
+        width: 100%; /* 1 item per row on mobile screens */
+    }
+}
