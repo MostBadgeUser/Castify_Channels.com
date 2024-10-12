@@ -95,3 +95,20 @@ function displayUsername() {
 
 // Call displayUsername function on page load
 document.addEventListener('DOMContentLoaded', displayUsername);
+
+// JavaScript for search functionality
+const searchButton = document.querySelector('.search-button');
+searchButton.addEventListener('click', function() {
+    const query = document.querySelector('.search-input').value;
+    alert('Searching for: ' + query);
+    // Here you can redirect to a search results page if implemented
+});
+
+// Logout functionality
+const logoutButton = document.querySelector('.logout-button');
+logoutButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    localStorage.removeItem('currentUser'); // Remove current user from local storage
+    displayUsername(); // Update displayed username to "Guest"
+    alert('Logged out successfully!'); // Notify user of successful logout
+});
